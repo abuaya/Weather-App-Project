@@ -19,8 +19,6 @@ h2 {
 .weatherApp-border {
   border: 2px solid;
   border-radius: 5px;
-  padding: 5px;
-  margin: 5px;
   max-width: 750px;
   max-height: 750px;
   background-image: linear-gradient(to top, #cd9cf2 0%, #f6f3ff 100%);
