@@ -1,9 +1,10 @@
 body {
   font-family: "Times New Roman", Times, serif;
+  background-image: linear-gradient(to top, #cd9cf2 0%, #f6f3ff 100%);
 }
 
 h1 {
-  font-family: "Times New Roman", Times, serif;
+  font-size: 100px;
 }
 
 h2 {
@@ -16,9 +17,8 @@ h2 {
 .weatherApp-border {
   padding: 20px;
   margin: auto 20px;
-  max-width: 750px;
-  max-height: 750px;
-  background-image: linear-gradient(to top, #cd9cf2 0%, #f6f3ff 100%);
+  max-width: 650px;
+  max-height: 600px;
 }
 
 .form-control {
