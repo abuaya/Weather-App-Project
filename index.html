@@ -26,11 +26,9 @@
     <div class="container">
       <div class="border border-4 border-secondary rounded" id = "weatherApp-border"> 
 
-        <div class="col-12"> 
-          <h1>What's the weather where you are?</h1>
 
-          <form id="form search-form">
-            <div class="col-5">
+          <form class="col-6" id="form search-form" >
+ 
               <input
                 type="text"
                 class="form-control"
@@ -46,28 +44,22 @@
             value="Enter"
           />
         
-          <button class="btn btn-success" id="current-location-button">
+          <button class="btn btn-success" 
+          id="current-location-button">
             Current
           </button>
 
-            <h2>
-            <div class="col-6" id="date">
-              Saturday, January 2 2021, 5:15pm
-            </div>
-          </form>
-          </div>
-        </h2>
-      </div>
+            </form>
 
-
+          <span class="col-6" id="date">
+            <h1>  Saturday, January 2 2021, 5:15pm </h1>
+          </span>
 
           <div class="cityName" id="nameOfCity"> 
-              <h3>  
+              <h2>  
               Sydney
-            </h3>
+              </h2>
             </div>
-
-              <div class = "col-6">
 
 
                 <span class="CurrentTemperture">
@@ -76,8 +68,9 @@
                     <i class="far-fa-sun"></i>
                     <span class= "celfarNumber" id="display-Temperature">
                       </span>
-                      <span class="unit"> °C </span>
+                      <span class="unit"> 25°C </span>
               </div>
+
 
     <ul> 
         <li>
@@ -116,18 +109,23 @@
                 Monday
                 <br />
                 <br />
+
                 <span class="weatherResultDayTwo">
                   High: 25°C Low: 15°C
                 </span>
+
                   <br />
                   <span class="weatherResultEmojiDayTwo">
                     🌞
                   </span>
+
                   <br />
                   Humidity: 55%
                   <br />
+
                   Feels: 😃
                 </span>
+                
               </div>
 
 
@@ -169,7 +167,7 @@
               </div>
 
 
-              <div class="col-2 5 Day-5">
+              <div class="col-2 Day-5">
                 Thursday
                 <br />
                 <br />

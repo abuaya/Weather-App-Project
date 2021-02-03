@@ -1,7 +1,7 @@
 /// Feature one ///
 let now = new Date();
 
-let h2 = document.querySelector("h2");
+let h1 = document.querySelector("h2");
 let date = now.getDate();
 let hours = now.getHours();
 if (hours < 10) {
@@ -38,7 +38,7 @@ let months = [
 ];
 let month = months[now.getMonth()];
 
-h2.innerHTML = `${day} ${month} ${date}, ${year}, ${hours}:${minutes}`;
+h1.innerHTML = `${day} ${month} ${date}, ${year}, ${hours}:${minutes}`;
 
 /// week 5 search engine ///
 
