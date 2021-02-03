@@ -1,7 +1,7 @@
 /// Feature one ///
 let now = new Date();
 
-let h1 = document.querySelector("h2");
+let h1 = document.querySelector("h1");
 let date = now.getDate();
 let hours = now.getHours();
 if (hours < 10) {
