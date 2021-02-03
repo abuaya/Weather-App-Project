@@ -16,13 +16,13 @@ h2 {
   font-size: 20px;
 }
 
-.weatherApp-border {
+.border {
   border: 2px solid;
   border-radius: 5px;
   padding: 5px;
   margin: 5px;
   max-width: 750px;
-  max-height: 750px;
+  max-height: 600px;
   background-image: linear-gradient(to top, #cd9cf2 0%, #f6f3ff 100%);
 }
 
