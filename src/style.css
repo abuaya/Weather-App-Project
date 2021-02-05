@@ -55,7 +55,7 @@ h2 {
 
 .CurrentTemperture {
   position: relative;
-  left: 350px;
+  left: 300px;
   top: 0px;
   font-size: 20px;
   font-weight: 700;
@@ -73,7 +73,7 @@ h2 {
   font-size: 50px;
   font-weight: 750;
   position: relative;
-  left: 615px;
+  left: 575px;
   top: -65px;
 }
 
