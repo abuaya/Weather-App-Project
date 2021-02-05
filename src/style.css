@@ -4,7 +4,7 @@ body {
 
 h1 {
   position: relative;
-  left: 20px;
+  left: 200px;
   top: 25px;
   font-size: 10px;
 }
@@ -16,7 +16,6 @@ h2 {
 }
 
 .weather-app-border {
-  border: 10px solid black;
   border-radius: 15px;
   padding: 5px;
   margin: 10px;
@@ -52,42 +51,42 @@ h2 {
 
 .cityName {
   position: relative;
-  left: -75px;
-  top: 0px;
-  font-size: 50px;
+  left: -50px;
+  top: -100px;
+  font-size: 60px;
   margin: 0 auto;
 }
 
 .CurrentTemperture {
   position: relative;
-  left: 300px;
-  top: 0px;
-  font-size: 20px;
+  left: 20px;
+  top: 100px;
+  font-size: 22px;
   font-weight: 700;
 }
 
 .celfarNumber {
   position: relative;
-  left: 575px;
-  top: -65px;
-  font-size: 20px;
+  left: 25px;
+  top: 100px;
+  font-size: 50px;
   font-weight: 500;
 }
 
 .unit {
-  font-size: 50px;
+  font-size: 60px;
   font-weight: 500;
   position: relative;
-  left: 575px;
-  top: -65px;
+  left: 320px;
+  top: 25px;
 }
 
 ul {
   font-size: 25px;
-  font-weight: 500;
+  font-weight: 400;
   position: relative;
-  left: 450px;
-  top: -40px;
+  left: 490px;
+  top: -75px;
 }
 
 .fiveDayOutlook {
