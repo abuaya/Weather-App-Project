@@ -1,15 +1,17 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 h1 {
   position: relative;
   left: 20px;
-  top: 10px;
-  font-size: 10px;
+  top: 25px;
 }
 
 h2 {
   position: relative;
   left: 100px;
-  top: 100px;
-  font-size: 500px;
+  top: 135px;
 }
 
 .weather-app-border {
@@ -19,6 +21,7 @@ h2 {
   margin: 10px;
   max-width: 750px;
   max-height: 750px;
+  background-image: linear-gradient(to top, #cd9cf2 0%, #f6f3ff 100%);
 }
 
 .form-control {
@@ -36,21 +39,22 @@ h2 {
 
 .btn-primary {
   position: relative;
-  left: 525px;
+  left: 450px;
   top: -12px;
 }
 
 .btn-success {
   position: relative;
-  left: 525px;
+  left: 450px;
   top: -12px;
 }
 
-.date-time {
+.date {
   position: relative;
   left: 0px;
   top: 0px;
-  font-size: 15px;
+  font-size: 50px;
+  font-weight: 750;
 }
 
 .CurrentTemperture {
@@ -71,7 +75,7 @@ h2 {
 
 .unit {
   font-size: 50px;
-  font-weight: 750;
+  font-weight: 500;
   position: relative;
   left: 575px;
   top: -65px;
@@ -79,15 +83,15 @@ h2 {
 
 ul {
   font-size: 25px;
-  font-weight: 750;
+  font-weight: 500;
   position: relative;
   left: 400px;
-  top: -60px;
+  top: -40px;
 }
 
 .fiveDayOutlook {
   position: relative;
-  top: -80px;
+  top: -50px;
   font-weight: 600;
 }
 
