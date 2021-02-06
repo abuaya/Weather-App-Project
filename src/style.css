@@ -1,12 +1,12 @@
 body {
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 h1 {
   position: relative;
-  left: 120px;
-  top: 25px;
-  font-size: 10px;
+  left: 400px;
+  top: 75px;
+  font-size: 25px;
 }
 
 h2 {
@@ -19,8 +19,8 @@ h2 {
   border-radius: 15px;
   padding: 5px;
   margin: 10px;
-  max-width: 750px;
-  max-height: 750px;
+  max-width: 850px;
+  max-height: 700px;
   background-image: url(https://images.unsplash.com/photo-1565130838609-c3a86655db61?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80);
 }
 
@@ -51,8 +51,8 @@ h2 {
 
 .cityName {
   position: relative;
-  left: -50px;
-  top: -100px;
+  left: -75px;
+  top: -125px;
   font-size: 60px;
   margin: 0 auto;
 }
@@ -78,26 +78,28 @@ h2 {
   font-weight: 500;
   position: relative;
   left: 320px;
-  top: 25px;
+  top: 30px;
 }
 
 ul {
   font-size: 25px;
   font-weight: 400;
   position: relative;
-  left: 490px;
+  left: 525px;
   top: -75px;
 }
 
 .fiveDayOutlook {
   position: relative;
   top: -50px;
-  font-weight: 600;
+  font-weight: 550;
+  padding: 10px 10px 10px 10px;
+  margin: 0 auto;
 }
 
 .Day-1 {
   position: relative;
-  left: 20px;
+  left: 30px;
   top: 30px;
 }
 
@@ -109,7 +111,7 @@ ul {
 
 .Day-2 {
   position: relative;
-  left: 20px;
+  left: 50px;
   top: 30px;
 }
 
@@ -121,7 +123,7 @@ ul {
 
 .Day-3 {
   position: relative;
-  left: 40px;
+  left: 80px;
   top: 30px;
 }
 
@@ -133,7 +135,7 @@ ul {
 
 .Day-4 {
   position: relative;
-  left: 90px;
+  left: 100px;
   top: 30px;
 }
 
