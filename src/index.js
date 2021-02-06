@@ -38,7 +38,7 @@ let months = [
 ];
 let month = months[now.getMonth()];
 
-h1.innerHTML = `${day}, ${month} ${date}, ${year}, ${hours}:${minutes}`;
+h1.innerHTML = `${day} ${month} ${date}, ${year}, ${hours}:${minutes}`;
 
 /// week 5 search engine ///
 
