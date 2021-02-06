@@ -9,7 +9,11 @@ h1 {
   top: 75px;
   font-size: 25px;
   font-weight: 300;
-  color: black;
+  color: #f9c6b9;
+}
+
+.element {
+  text-shadow: 1px 1px 0 #000, 1px 1px 0 #000, 1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 h2 {
