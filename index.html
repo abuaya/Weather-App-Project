@@ -11,184 +11,132 @@
       integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="src/style.css" >
+    <link rel="stylesheet" href="src/style.css" />
   </head>
 
   <body>
     <div class="container">
-      <div class="border weather-app-border"> 
-    
-         <div class="row"> 
+      <div class="border weather-app-border">
+        <div class="row">
+          <form class="col-9" id="form search-form">
+            <input
+              type="text"
+              class="form-control col-3"
+              placeholder="Enter city"
+              autofocus="on"
+              id="cityNameInput"
+            />
 
-          <form class="col-9" id="form search-form" >
- 
-              <input
-                type="text"
-                class="form-control col-3"
-                placeholder="Enter city"
-                autofocus = "on"
-                id="cityNameInput"
-                />
+            <input
+              class="btn btn-primary col-2"
+              type="submit"
+              id="search-button"
+              value="Enter"
+            />
 
-              <input
-            class="btn btn-primary col-2"
-            type="submit"
-            id="search-button"
-            value="Enter"
-          />
-        
-          <button class="btn btn-success col-2" 
-          id="current-location-button">
-            Current
-          </button>
+            <button class="btn btn-success col-2" id="current-location-button">
+              Current
+            </button>
+          </form>
 
-            </form>
+          <h1 class="element">Wednesday, February 3, 2021, 19:21</h1>
 
+          <h2>
+            <div class="col-10 cityName">Sydney</div>
+          </h2>
 
-            <h1 class="element"> Wednesday, February 3, 2021, 19:21 </h1>
+          <span class="CurrentTemperture"> The current temperture in </span>
+          <i class="far-fa-sun"></i>
+          <span class="celfarNumber"> </span>
+          <span class="unit"> °C </span>
+        </div>
 
+        <ul>
+          <li>Description: <span id="description"> </span></li>
+          <li>Humidity: <span id="humidity"> </span> %</li>
+          <li>Wind: <span id="wind"> </span> km/h</li>
+        </ul>
 
-              <h2>  
-                <div class="col-10 cityName">
-              Sydney
-              </div>
-              </h2>
+        <div class="row fiveDayOutlook">
+          <div class="col-2 Day-1">
+            Sunday
+            <br />
+            <br />
+            <span class="weatherResultDayOne"> High: 18°C Low: 15°C </span>
+            <br />
+            <span class="weatherResultEmojiDayOne"> ⛅ </span>
+            <br />
+            Humidity: 45%
+            <br />
+            Feels: 😃
+          </div>
 
-                <span class="CurrentTemperture">
-                    The current temperture in
-                  </span>
-                    <i class="far-fa-sun"></i>
-                    <span class= "celfarNumber">
-                      </span>
-                      <span class="unit"> °C </span>
-              </div>
+          <div class="col-2 Day-2">
+            Monday
+            <br />
+            <br />
 
+            <span class="weatherResultDayTwo"> High: 25°C Low: 15°C </span>
 
-    <ul> 
-        <li>
-            Description: <span id="description"> </span>
-          </li>
-      <li>
-        Humidity: <span id="humidity"> </span> %
-      </li>
-      <li>
-        Wind: <span id="wind"> </span> km/h
-      </li>
-    </ul>
-    
+            <br />
+            <span class="weatherResultEmojiDayTwo"> 🌞 </span>
 
-            <div class="row fiveDayOutlook">
-              <div class="col-2 Day-1">
-                Sunday
-                <br />
-                <br />
-                <span class="weatherResultDayOne">
-                  High: 18°C Low: 15°C
-                </span>
-                  <br />
-                  <span class="weatherResultEmojiDayOne">
-                    ⛅
-                  </span>
-                  <br />
-                  Humidity: 45%
-                  <br />
-                  Feels: 😃
-                </span>
-              </div>
+            <br />
+            Humidity: 55%
+            <br />
 
+            Feels: 😃
+          </div>
 
-              <div class="col-2 Day-2">
-                Monday
-                <br />
-                <br />
+          <div class="col-2 Day-3">
+            Tuesday
+            <br />
+            <br />
+            <span class="weatherResultDayThree"> High: 32°C Low: 25°C </span>
+            <br />
+            <span class="weatherResultEmojiDayThree"> 🌞 </span>
+            <br />
+            Humidity: 75%
+            <br />
+            Feels: 🥵
+          </div>
 
-                <span class="weatherResultDayTwo">
-                  High: 25°C Low: 15°C
-                </span>
+          <div class="col-2 Day-4">
+            Wednesday
+            <br />
+            <br />
+            <span class="weatherResultDayTwo"> High: 30°C Low: 28°C </span>
+            <br />
+            <span class="weatherResultEmojiDayTwo"> 🌦 </span>
+            <br />
+            Humidity: 65%
+            <br />
+            Feels: 🥵
+          </div>
 
-                  <br />
-                  <span class="weatherResultEmojiDayTwo">
-                    🌞
-                  </span>
-
-                  <br />
-                  Humidity: 55%
-                  <br />
-
-                  Feels: 😃
-                </span>
-                
-              </div>
-
-
-              <div class="col-2 Day-3">
-                Tuesday
-                <br />
-                <br />
-                <span class="weatherResultDayThree">
-                  High: 32°C Low: 25°C
-                </span>
-                  <br />
-                  <span class="weatherResultEmojiDayThree">
-                    🌞
-                  </span>
-                  <br />
-                  Humidity: 75%
-                  <br />
-                  Feels: 🥵
-                </span>
-              </div>
-
-
-              <div class="col-2 Day-4">
-                Wednesday
-                <br />
-                <br />
-                <span class="weatherResultDayTwo">
-                  High: 30°C Low: 28°C
-                </span>
-                  <br />
-                  <span class="weatherResultEmojiDayTwo">
-                    🌦
-                  </span>
-                  <br />
-                  Humidity: 65%
-                  <br />
-                  Feels: 🥵
-                </span>
-              </div>
-
-
-              <div class="col-2 Day-5">
-                Thursday
-                <br />
-                <br />
-                <span class="weatherResultDayTwo">
-                  High: 20°C Low: 17°C
-                </span>
-                  <br />
-                  <span class="weatherResultEmojiDayTwo">
-                    🌥
-                  </span>
-                  <br />
-                  Humidity: 45%
-                  <br />
-                  Feels: 😃
-                </span>
-              </div>
-
-            </div>
-
-            <footer> <a href="https://github.com/abuaya/Weather-App-Project"> Open-source code </a> by Alisha Buaya </footer>
-
-              <script src="src/index.js">
-              </script>
-
+          <div class="col-2 Day-5">
+            Thursday
+            <br />
+            <br />
+            <span class="weatherResultDayTwo"> High: 20°C Low: 17°C </span>
+            <br />
+            <span class="weatherResultEmojiDayTwo"> 🌥 </span>
+            <br />
+            Humidity: 45%
+            <br />
+            Feels: 😃
           </div>
         </div>
-        </div>
+
+        <footer>
+          <a href="https://github.com/abuaya/Weather-App-Project">
+            Open-source code
+          </a>
+          by Alisha Buaya
+        </footer>
+
+        <script src="src/index.js"></script>
       </div>
-    </div>
     </div>
   </body>
 </html>
