@@ -44,10 +44,10 @@ h1.innerHTML = `${day} ${month} ${date}, ${year}, ${hours}:${minutes}`;
 
 function displayConditions(response) {
   console.log(response.data);
-  document.querySelector("#cityName").innerHTML = response.data.name;
+  document.querySelector("#DisplayCityName").innerHTML = response.data.name;
   document.querySelector("#CurrentTemperture").innerHTML = Math.round(
     response.data.main.temp
-  );
+    );
   document.querySelector("#description").innerHTML =
     response.data.weather[0].main;
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
@@ -75,11 +75,11 @@ function getCurrentLocation(event) {
 
 function handleSubmit(event) {
   event.preventDefault();
-  let city = document.querySelector("#cityNameInput").value;
+  let city = document.querySelector("#DisplayCityName").value;
   searchCity(city);
 }
 
-let form = document.querySelector(`#search-form`);
+let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
 
 let currentLocationButton = document.querySelector("#current-location-button");
