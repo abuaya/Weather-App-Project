@@ -44,8 +44,8 @@ h1.innerHTML = `${day} ${month} ${date}, ${year}, ${hours}:${minutes}`;
 
 function displayConditions(response) {
   console.log(response.data);
-  document.querySelector("#nameOfCity").innerHTML = response.data.name;
-  document.querySelector("#display-Temperature").innerHTML = Math.round(
+  document.querySelector("#cityName").innerHTML = response.data.name;
+  document.querySelector("#CurrentTemperture").innerHTML = Math.round(
     response.data.main.temp
   );
   document.querySelector("#description").innerHTML =
