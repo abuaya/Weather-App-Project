@@ -85,7 +85,13 @@ h2 {
   font-weight: 500;
   position: relative;
   left: 150px;
-  top: -25px;
+  top: -20px;
+}
+
+img {
+  position: relative;
+  left: 125px;
+  top: -15px;
 }
 
 ul {
@@ -93,14 +99,14 @@ ul {
   font-weight: 400;
   position: relative;
   left: 420px;
-  top: -125px;
+  top: -175px;
   list-style: none;
   text-transform: capitalize;
 }
 
 .fiveDayOutlook {
   position: relative;
-  top: -125px;
+  top: -150px;
   font-weight: 525;
   padding: 10px 10px 10px 10px;
   margin: 0 auto;
@@ -169,6 +175,6 @@ ul {
 footer {
   font-size: 10px;
   position: relative;
-  top: -70px;
+  top: -100px;
   text-align: center;
 }
