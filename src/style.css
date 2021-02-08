@@ -74,8 +74,8 @@ h2 {
 
 .celfarNumber {
   position: relative;
-  left: 100px;
-  top: 100px;
+  left: 80px;
+  top: 75px;
   font-size: 50px;
   font-weight: 500;
 }
@@ -84,8 +84,8 @@ h2 {
   font-size: 60px;
   font-weight: 500;
   position: relative;
-  left: 125px;
-  top: 70px;
+  left: 150px;
+  top: -8px;
 }
 
 ul {
@@ -93,13 +93,14 @@ ul {
   font-weight: 400;
   position: relative;
   left: 420px;
-  top: -80px;
+  top: -125px;
   list-style: none;
+  text-transform: capitalize;
 }
 
 .fiveDayOutlook {
   position: relative;
-  top: -50px;
+  top: -125px;
   font-weight: 525;
   padding: 10px 10px 10px 10px;
   margin: 0 auto;
@@ -168,6 +169,6 @@ ul {
 footer {
   font-size: 10px;
   position: relative;
-  top: 0px;
+  top: -70px;
   text-align: center;
 }
