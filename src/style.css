@@ -74,18 +74,21 @@ h2 {
 
 .celfarNumber {
   position: relative;
-  left: 80px;
-  top: 75px;
+  left: 75px;
+  top: 50px;
   font-size: 50px;
   font-weight: 500;
 }
 
 .unit {
-  font-size: 60px;
+  font-size: 30px;
   font-weight: 500;
   position: relative;
   left: 150px;
-  top: -8px;
+  top: -25px;
+}
+
+img {
 }
 
 ul {
