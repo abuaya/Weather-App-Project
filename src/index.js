@@ -53,13 +53,13 @@ function displayTemperature (response) {
   humidityElement.innerHTML = response.data.main.humidity;
   let windElement = document.querySelector("#wind");
   windElement.innerHTML = Math.round (response.data.wind.speed);
-  let weatherIconElement = document.querySelector("weatherIcon");
+  let weatherIconElement = document.querySelector("#weatherIcon");
   weatherIconElement.setAttribute ("src",`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
   weatherIconElement.setAttribute("alt", response.data.weather[0].description);
 }
  
 
-  let city = "Sydney"
+  let city = "london"
   let apiKey = "a05b99834a4c4393485b5df92793ef0c";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
