@@ -86,6 +86,7 @@ h2 {
   position: relative;
   left: 150px;
   top: -20px;
+  cursor: pointer;
 }
 
 img {
