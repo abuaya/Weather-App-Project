@@ -44,21 +44,23 @@ h1.innerHTML = `${day}, ${month} ${date}, ${year}, ${hours}:${minutes}`;
 function displayTemperature (response) {
 
   let temperatureElement = document.querySelector("#temperatureData");
-  temperatureElement.innerHTML = Math.round (response.data.main.temp);
   let cityElement = document.querySelector("#displayCity");
-  cityElement.innerHTML = response.data.name;
   let weatherDescription = document.querySelector("#description");
-  weatherDescription.innerHTML = response.data.weather[0].description;
   let humidityElement = document.querySelector("#humidity");
-  humidityElement.innerHTML = response.data.main.humidity;
   let windElement = document.querySelector("#wind");
-  windElement.innerHTML = Math.round (response.data.wind.speed);
   let weatherIconElement = document.querySelector("#weatherIcon");
+
+  celciusTemperature = response.data.main.temp;
+
+  temperatureElement.innerHTML = Math.round (celciusTemperature);
+  cityElement.innerHTML = response.data.name;
+  weatherDescription.innerHTML = response.data.weather[0].description;
+  humidityElement.innerHTML = response.data.main.humidity;
+  windElement.innerHTML = Math.round (response.data.wind.speed);
   weatherIconElement.setAttribute ("src",`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
   weatherIconElement.setAttribute("alt", response.data.weather[0].description);
 }
  
-
 function search(city) {
   let apiKey = "a05b99834a4c4393485b5df92793ef0c";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
@@ -73,13 +75,31 @@ function handleSubmit(event) {
 
 function showFarenheitTemperature(event) {
   event.preventDefault();
-  alert("clicked");
+  let fahrenheitTemperature = (celciusTemperature * 9) / 5 + 32;
+  let temperatureElement = document.querySelector("#temperatureData")
+  celciusLink.classList.remove("active");
+  farenheitLink.classList.add("active");
+  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
 }
 
-search("New York")
+function showCelciusTemperature(event){
+  event.preventDefault();
+  celciusLink.classList.add("active");
+    farenheitLink.classList.remove("active");
+  let temperatureElement = document.querySelector("#temperatureData")
+  temperatureElement.innerHTML = Math.round(celciusTemperature);
+
+}
+ 
+let celciusTemperature = null; 
  
   let form = document.querySelector("#search-form");
   form.addEventListener("submit", handleSubmit);
 
   let farenheitLink = document.querySelector("#farenheit-link");
   farenheitLink.addEventListener("click", showFarenheitTemperature);
+
+  let celciusLink = document.querySelector("#celcius-link");
+  celciusLink.addEventListener("click", showCelciusTemperature);
+
+  search("Sydney")

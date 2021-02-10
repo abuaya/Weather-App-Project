@@ -84,9 +84,19 @@ h2 {
   font-size: 30px;
   font-weight: 500;
   position: relative;
-  left: 150px;
+  left: 175px;
   top: -20px;
-  cursor: pointer;
+  text-decoration: none;
+}
+
+.unit .active {
+  cursor: default;
+  color: #f9c6b9;
+  text-decoration: none;
+}
+
+.unit .active:hover {
+  text-decoration: none;
 }
 
 img {
