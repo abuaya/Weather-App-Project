@@ -22,11 +22,19 @@ h2 {
   top: 135px;
 }
 
+h3 {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  font-size: 20px;
+  text-shadow: 1px 1px 0 #000, 1px 1px 0 #000, 1px 1px 0 #000, 1px 1px 0 #000;
+}
+
 .weather-app-border {
   border-radius: 15px;
   padding: 5px;
   margin: 10px;
-  max-width: 850px;
+  max-width: 900px;
   max-height: 700px;
   background-image: url(https://images.unsplash.com/photo-1565130838609-c3a86655db61?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80);
 }
@@ -117,75 +125,24 @@ ul {
 
 .fiveDayOutlook {
   position: relative;
-  top: -150px;
-  font-weight: 525;
+  top: -125px;
+  left: 20px;
+  font-weight: 500;
+  font-size: 18px;
+  margin-top: 10px;
   padding: 10px 10px 10px 10px;
   margin: 0 auto;
 }
 
-.Day-1 {
+.fiveDayOutlook img {
   position: relative;
-  left: 30px;
-  top: 30px;
-}
-
-.weatherResultEmojiDayOne {
-  font-size: 25px;
-  position: relative;
-  left: 20px;
-}
-
-.Day-2 {
-  position: relative;
-  left: 50px;
-  top: 30px;
-}
-
-.weatherResultEmojiDayTwo {
-  font-size: 25px;
-  position: relative;
-  left: 20px;
-}
-
-.Day-3 {
-  position: relative;
-  left: 80px;
-  top: 30px;
-}
-
-.weatherResultEmojiDayThree {
-  font-size: 25px;
-  position: relative;
-  left: 20px;
-}
-
-.Day-4 {
-  position: relative;
-  left: 100px;
-  top: 30px;
-}
-
-.weatherResultEmojiDayFour {
-  font-size: 25px;
-  position: relative;
-  left: 20px;
-}
-
-.Day-5 {
-  position: relative;
-  left: 120px;
-  top: 30px;
-}
-
-.weatherResultEmojiDayFive {
-  font-size: 25px;
-  position: relative;
-  left: 20px;
+  left: 0px;
+  top: 0px;
 }
 
 footer {
   font-size: 10px;
   position: relative;
-  top: -100px;
+  top: 25px;
   text-align: center;
 }
