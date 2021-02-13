@@ -72,9 +72,7 @@ if (minutes < 10) {
   minutes = `0${minutes}`;
 }
 
-
   return `${hours}:${minutes}`;
-
 }
 
 function displayForecast(response){
@@ -130,6 +128,34 @@ function showCelciusTemperature(event){
   temperatureElement.innerHTML = Math.round(celciusTemperature);
 
 }
+
+ function displayConditions(response) {
+  console.log(response.data);
+  document.querySelector("#displayCity").innerHTML = response.data.name;
+  document.querySelector("#temperatureData").innerHTML = Math.round(
+    response.data.main.temp
+  );
+  document.querySelector("#description").innerHTML =
+    response.data.weather[0].main;
+  document.querySelector("#humidity").innerHTML = response.data.main.humidity;
+  document.querySelector("#wind").innerHTML = Math.round(
+    response.data.wind.speed
+  );
+ }
+
+function searchLocation(position) {
+  let apiKey = "a05b99834a4c4393485b5df92793ef0c";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayConditions);
+}
+
+function getCurrentLocation(event) {
+  event.preventDefault();
+  navigator.geolocation.getCurrentPosition(searchLocation);
+}
+
+let currentLocationButton = document.querySelector("#current-location-button");
+currentLocationButton.addEventListener("click", getCurrentLocation);
  
 let celciusTemperature = null; 
  
