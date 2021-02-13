@@ -7,7 +7,7 @@ h1 {
   position: relative;
   left: 400px;
   top: 75px;
-  font-size: 25px;
+  font-size: 30px;
   font-weight: 300;
   color: #f9c6b9;
 }
@@ -20,14 +20,6 @@ h2 {
   position: relative;
   left: 100px;
   top: 135px;
-}
-
-h3 {
-  position: relative;
-  left: 0px;
-  top: 0px;
-  font-size: 20px;
-  text-shadow: 1px 1px 0 #000, 1px 1px 0 #000, 1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .weather-app-border {
@@ -66,26 +58,29 @@ h3 {
 
 .cityName {
   position: relative;
-  left: -100px;
-  top: -75px;
-  font-size: 60px;
+  left: -125px;
+  top: -60px;
+  font-size: 65px;
   margin: 0 auto;
+  text-shadow: 1px 1px 0 #000, 1px 1px 0 #000, 1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .CurrentTemperture {
   position: relative;
-  left: 50px;
+  left: 40px;
   top: -80px;
-  font-size: 22px;
+  font-size: 25px;
   font-weight: 700;
+  text-shadow: 1px 1px 0 #000, 1px 1px 0 #000, 1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .celfarNumber {
   position: relative;
   left: 75px;
-  top: 50px;
-  font-size: 50px;
+  top: 60px;
+  font-size: 60px;
   font-weight: 500;
+  text-shadow: 1px 1px 0 #000, 1px 1px 0 #000, 1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .unit {
@@ -94,13 +89,13 @@ h3 {
   position: relative;
   left: 175px;
   top: -20px;
-  text-decoration: none;
+  text-shadow: 1px 1px 0 #000, 1px 1px 0 #000, 1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .unit .active {
   cursor: default;
-  color: #f9c6b9;
   text-decoration: none;
+  color: #f9c6b9;
 }
 
 .unit .active:hover {
@@ -114,24 +109,30 @@ img {
 }
 
 ul {
-  font-size: 25px;
+  font-size: 30px;
   font-weight: 400;
   position: relative;
   left: 420px;
-  top: -175px;
+  top: -225px;
   list-style: none;
   text-transform: capitalize;
+  text-shadow: 1px 1px 0 #000, 1px 1px 0 #000, 1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.fiveDayOutlook h3 {
+  font-size: 22px;
+  text-shadow: 1px 1px 0 #000, 1px 1px 0 #000, 1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .fiveDayOutlook {
   position: relative;
-  top: -125px;
+  top: -175px;
   left: 20px;
-  font-weight: 500;
-  font-size: 18px;
+  font-size: 20px;
   margin-top: 10px;
   padding: 10px 10px 10px 10px;
   margin: 0 auto;
+  text-shadow: 1px 1px 0 #000, 1px 1px 0 #000, 1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .fiveDayOutlook img {
@@ -143,6 +144,6 @@ ul {
 footer {
   font-size: 10px;
   position: relative;
-  top: 25px;
+  top: 20px;
   text-align: center;
 }
