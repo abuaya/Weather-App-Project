@@ -57,6 +57,8 @@ function displayTemperature (response) {
   weatherDescription.innerHTML = response.data.weather[0].description;
   humidityElement.innerHTML = response.data.main.humidity;
   windElement.innerHTML = Math.round (response.data.wind.speed);
+
+
   weatherIconElement.setAttribute ("src",`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
   weatherIconElement.setAttribute("alt", response.data.weather[0].description);
 }
@@ -81,7 +83,7 @@ function displayForecast(response){
   let forecast = null;
 
 for (let index = 0; index < 6; index++) {
-    let forecast = response.data.list[index];
+  let forecast = response.data.list[6];
   forecastElement.innerHTML += ` 
   <div class="col-2"">
     <h3> ${formatHours(forecast.dt *1000)}
@@ -93,7 +95,6 @@ for (let index = 0; index < 6; index++) {
     </div>
     `;
 }
-
  }
 
 function search(city) {
@@ -130,8 +131,7 @@ function showCelciusTemperature(event){
 }
 
  function displayConditions(response) {
-  console.log(response.data);
-  document.querySelector("#displayCity").innerHTML = response.data.name;
+   document.querySelector("#displayCity").innerHTML = response.data.name;
   document.querySelector("#temperatureData").innerHTML = Math.round(
     response.data.main.temp
   );
@@ -143,16 +143,24 @@ function showCelciusTemperature(event){
   );
  }
 
-function searchLocation(position) {
+function searchLocation(position) { 
   let apiKey = "a05b99834a4c4393485b5df92793ef0c";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
+  let units = "metric";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=
+  ${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=${units}`;
   axios.get(apiUrl).then(displayConditions);
+  
+  apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=${units}`;
+  axios.get(apiUrl).then(displayForecast);
+
 }
+
 
 function getCurrentLocation(event) {
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(searchLocation);
-}
+ }
+
 
 let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
