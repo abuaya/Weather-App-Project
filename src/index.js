@@ -77,25 +77,25 @@ if (minutes < 10) {
   return `${hours}:${minutes}`;
 }
 
-function displayForecast(response){
+function displayForecast(response) {
   let forecastElement = document.querySelector("#forecast");
   forecastElement.innerHTML = null;
   let forecast = null;
-
-for (let index = 0; index < 6; index++) {
-  let forecast = response.data.list[6];
-  forecastElement.innerHTML += ` 
+  for (let index = 0; index < 6; index++) {
+    let forecast = response.data.list[index];
+    forecastElement.innerHTML += ` 
   <div class="col-2"">
-    <h3> ${formatHours(forecast.dt *1000)}
+    <h3> ${formatHours(forecast.dt * 1000)}
     </h3> 
     <img src= "http://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png" alt="" />
-    <strong>High: ${Math.round (forecast.main.temp_max)}°C </strong> 
+    <strong>High: ${Math.round(forecast.main.temp_max)}°C </strong> 
     Low: ${Math.round(forecast.main.temp_min)}°C
     </div>
     </div>
     `;
+  }
 }
- }
+
 
 function search(city) {
   let apiKey = "a05b99834a4c4393485b5df92793ef0c";
@@ -143,16 +143,13 @@ function showCelciusTemperature(event){
   );
  }
 
-function searchLocation(position) { 
+function searchLocation(position) {
   let apiKey = "a05b99834a4c4393485b5df92793ef0c";
   let units = "metric";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=
-  ${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=${units}`;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=${units}`;
   axios.get(apiUrl).then(displayConditions);
-  
-  apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=${units}`;
+  apiUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=${units}`;
   axios.get(apiUrl).then(displayForecast);
-
 }
 
 
